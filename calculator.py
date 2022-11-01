@@ -15,6 +15,15 @@ def value(valor):
     global i 
     inputText.insert(i, valor)
     i = i+1
+def delete(): 
+    inputText.delete(0, END) #Borrar el contenido de la caja de texto 
+    i = 0
+def do_operation(): #Funcion para realizar
+    operation = inputText.get() 
+    result = eval(operation)
+    inputText.delete(0,END)
+    inputText.insert(0,result)
+    i = 0
 #* Creacion de Botones 
 button1 = Button(window, text="1", width= 5, height=2, command= lambda: value(1))
 button2 = Button(window, text="2", width= 5, height=2, command= lambda: value(2))
@@ -27,7 +36,7 @@ button8 = Button(window, text="8", width= 5, height=2, command= lambda: value(8)
 button9 = Button(window, text="9", width= 5, height=2, command= lambda: value(9))
 button0 = Button(window, text="0", width= 16, height=2, command= lambda: value(0))
 #... Other controllers 
-button_delete = Button(window, text="AC", width= 5, height=2, command= lambda:NONE)
+button_delete = Button(window, text="AC", width= 5, height=2, command= lambda: delete())
 button_brochA = Button(window, text="(", width= 5, height=2, command= lambda: value("("))
 button_brochB = Button(window, text=")", width= 5, height=2, command= lambda: value(")"))
 # Operations 
@@ -35,7 +44,7 @@ button_sum = Button(window, text="+", width= 5, height=2, command= lambda: value
 button_rest = Button(window, text="-", width= 5, height=2, command= lambda: value("+"))
 button_div = Button(window, text="/", width= 5, height=2, command= lambda: value("/"))
 button_mult = Button(window, text="*", width= 5, height=2, command= lambda: value("*"))
-button_result = Button(window, text="=", width= 5, height=2, command= lambda: value("="))
+button_result = Button(window, text="=", width= 5, height=2, command= lambda: do_operation())
 button_point = Button(window, text=".", width=5, height=2, command= lambda: value("."))
 
 #Agregar los botones en pantalla 
