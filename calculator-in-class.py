@@ -1,0 +1,16 @@
+#Creacion de una calculadora con Python 
+#* Paso 1: Lo primero que debemos hacer es importar la libreria Tkinter
+from tkinter import * #Importamos la libreria con todas sus dependencias 
+
+#*Paso 2: Nuestra aplicaicon debe tener una ventana y un Mainloop()
+#... 
+#* Paso 3: Guiandonos por el modelo, debemos crear la caja donde se mostraran los resultados 
+#... 
+#* Paso 4: Ahora, se deben crean los botones que contienen los numeros y los simbolos
+#... 
+#* Paso 5: Debemos Ubicar los botones dentro de la ventana y ordenarlos de acuerdo al modelo de la maqueta
+#... 
+#* Paso 6: Se deben programar las funcionaliades de la calculadora tales como 
+#? -. Al hacer clic sobre el botono, ese valor debe aparecer en la caja de texto
+#? -. Al dar clic en igual, se debe realizar la operacion mencionada
+#? -. ... 
