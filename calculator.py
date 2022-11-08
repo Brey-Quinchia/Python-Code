@@ -35,7 +35,7 @@ button8 = Button(window, text="8", width= 5, height=2, command= lambda: value(8)
 button9 = Button(window, text="9", width= 5, height=2, command= lambda: value(9))
 button0 = Button(window, text="0", width= 16, height=2, command= lambda: value(0))
 #... Other controllers 
-button_delete = Button(window, text="AC", width= 5, height=2, command= lambda: delete())
+button_delete = Button(window, text="AC",bg='blue', width= 5, height=2, command= lambda: delete())
 button_brochA = Button(window, text="(", width= 5, height=2, command= lambda: value("("))
 button_brochB = Button(window, text=")", width= 5, height=2, command= lambda: value(")"))
 # Operations 
