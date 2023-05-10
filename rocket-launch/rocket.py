@@ -8,7 +8,7 @@ wn = turtle.Screen()
 wn.setup(width, height) # Window Size
 #wn.screensize(canvwidth=(width-100), canvheight=height)
 # wn.bgcolor("white") # Background Color
-wn.bgpic('rocket-base.gif') #Background Base
+wn.bgpic('rocket-basen.gif') #Background Base
 wn.title("Lanzamiento del SpaceTIC Rocket") # Set title
 wn.cv._rootwindow.resizable(False, False) # Lock window resize 
 
