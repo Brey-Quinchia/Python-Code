@@ -8,7 +8,7 @@ wn = turtle.Screen()
 wn.setup(width, height) # Window Size
 #wn.screensize(canvwidth=(width-100), canvheight=height)
 # wn.bgcolor("white") # Background Color
-wn.bgpic('rocket-basen.gif') #Background Base
+wn.bgpic('rocket-launch-2/rocket-basen.gif') #Background Base
 wn.title("Lanzamiento del SpaceTIC Rocket") # Set title
 wn.cv._rootwindow.resizable(False, False) # Lock window resize 
 
@@ -27,8 +27,8 @@ rocket.penup()
 rocket.setpos(-30, -245)
 
 # --> Add Rocket graphic
-wn.addshape('new-rocket.gif')
-rocket.shape('new-rocket.gif')
+wn.addshape('rocket-launch-2/new-rocket.gif')
+rocket.shape('rocket-launch-2/new-rocket.gif')
 
 # ---> Put on Launch Position
 rocket.left(90)
@@ -42,8 +42,8 @@ houston.clear()
 # ---> Tur On Raptor Motor
 wn.update()
 time.sleep(1)
-wn.addshape('start-rocket.gif') #Change the Rocket Image
-rocket.shape('start-rocket.gif')
+wn.addshape('rocket-launch-2/start-rocket.gif') #Change the Rocket Image
+rocket.shape('rocket-launch-2/start-rocket.gif')
 
 # ---> Go to Fly
 
